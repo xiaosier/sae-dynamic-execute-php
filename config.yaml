@@ -1,0 +1,4 @@
+name: dynamic
+version: 1
+handle:
+- rewrite: if(path ~ "/dynamic/(.*)\.html$") goto "/route.php?route_key=$1&%{QUERY_STRING}"
